@@ -1,5 +1,8 @@
 header div,
-.jumbotron div {
+.jumbotron div,
+.section-about div,
+.footer-top,
+.footer-bottom {
   color: white;
 }
 
@@ -51,4 +54,12 @@ header {
 
 .section-about {
   background-color: #1ABC9C;
+}
+
+.footer-top {
+  background-color: #3A546D;
+}
+
+.footer-bottom {
+  background-color: #2C3E50;
 }
