@@ -10,6 +10,29 @@ header {
   background-color: #2C3E50;
 }
 
+.menu {
+  display: inline;
+  list-style: none;
+}
+
+.text-right a {
+  text-decoration: none;
+  color: white;
+}
+
+.text-right a:hover {
+  color: white;
+}
+
+.menu li {
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.text-right .fa-bars {
+  display: none;
+}
+
 .text-right {
   text-align: end;
 }
@@ -62,4 +85,14 @@ header {
 
 .footer-bottom {
   background-color: #2C3E50;
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+
+  .text-right .fa-bars {
+    display: inline;
+  }
 }
