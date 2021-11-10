@@ -1,3 +1,10 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
 header div,
 .jumbotron div,
 .section-about div,
@@ -10,18 +17,22 @@ header {
   background-color: #2C3E50;
 }
 
+.col-md-6>.title {
+  font-weight: bold;
+}
+
 .menu {
   display: inline;
   list-style: none;
 }
 
-.text-right a {
+.text-end a {
   text-decoration: none;
   color: white;
 }
 
-.text-right a:hover {
-  color: white;
+.text-end a:hover {
+  color: #1ABC9C;
 }
 
 .menu li {
@@ -29,20 +40,28 @@ header {
   display: inline-block;
 }
 
-.text-right .fa-bars {
+.text-end .fa-bars {
   display: none;
-}
-
-.text-right {
-  text-align: end;
 }
 
 .jumbotron {
   background-color: #1ABC9C;
 }
 
-.text-center {
-  text-align: center;
+.img-avatar .avatar {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.star::after {
+  content: '';
+  width: 80px;
+  border: 1px solid white;
+}
+
+.star::before {
+  content: '';
+  border: 1px solid white;
 }
 
 .bg-red {
