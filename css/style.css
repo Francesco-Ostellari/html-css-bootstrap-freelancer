@@ -46,6 +46,7 @@ header {
 
 .jumbotron {
   background-color: #1ABC9C;
+  padding: 30px 0;
 }
 
 .img-avatar .avatar {
@@ -53,15 +54,33 @@ header {
   margin-bottom: 10px;
 }
 
-.star::after {
-  content: '';
-  width: 80px;
-  border: 1px solid white;
+.star {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
+.star .fa-star {
+  vertical-align: bottom;
+}
+
+.star::after {
+  content: '';
+  width: 110px;
+  border: 1px solid white;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.text-center .text {
+  font-size: 1.3em;
+  font-weight: 300;
+}
 .star::before {
   content: '';
+  width: 110px;
+  display: inline-block;
   border: 1px solid white;
+  margin: 0 10px;
 }
 
 .bg-red {
