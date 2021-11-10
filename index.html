@@ -19,7 +19,7 @@
       <title>Bootstrap Freelancer</title>
 </head>
 <body>
-    <header>
+    <header class="fixed-top">
       <div class="container">
         <div class="row py-2 align-items-center">
           <div class="col-6 col-sm-4 col-md-6">
@@ -31,7 +31,9 @@
               <li><a href="#">about</a></li>
               <li><a href="#">contact</a></li>
             </ul>
-            <a href="#"><i class="fas fa-bars"></i></a> 
+            <a href="#">
+              <i class="fas fa-bars"></i>
+            </a> 
           </div>
         </div>
       </div>
@@ -65,33 +67,51 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="image">
+            <div class="image position-relative">
               <img src="img/cabin.png" alt="">
+              <div class="transition position-absolute top-0 text-center">
+                <i class="fas fa-plus"></i>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="image">
+            <div class="image position-relative">
               <img src="img/cake.png" alt="">
+              <div class="transition position-absolute top-0 text-center">
+                <i class="fas fa-plus"></i>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="image">
+            <div class="image position-relative">
               <img src="img/circus.png" alt="">
+              <div class="transition position-absolute top-0 text-center">
+                <i class="fas fa-plus"></i>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="image">
+            <div class="image position-relative">
               <img src="img/game.png" alt="">
+              <div class="transition position-absolute top-0 text-center">
+                <i class="fas fa-plus"></i>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="image">
+            <div class="image position-relative">
               <img src="img/safe.png" alt="">
+              <div class="transition position-absolute top-0 text-center">
+                <i class="fas fa-plus"></i>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="image">
+            <div class="image position-relative">
               <img src="img/submarine.png" alt="">
+              <div class="transition position-absolute top-0 text-center">
+                <i class="fas fa-plus"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -148,19 +168,19 @@
             <form class="row g-3">
               <div class="col-12">
                 <label for="inputEmail4" class="form-label">Name</label>
-                <input type="email" class="form-control border border_input" id="inputEmail4">
+                <input type="email" class="form-control border_input" id="inputEmail4">
               </div>
               <div class="col-12">
                 <label for="inputAddress" class="form-label">Email Address </label>
-                <input type="text" class="form-control border border_input" id="inputAddress">
+                <input type="text" class="form-control border_input" id="inputAddress">
               </div>
               <div class="col-12">
                 <label for="inputAddress2" class="form-label"> Phone Number</label>
-                <input type="text" class="form-control border border_input" id="inputAddress2">
+                <input type="text" class="form-control border_input" id="inputAddress2">
               </div>
               <div class="col-12">
                 <label for="inputCity" class="form-label">Message</label>
-                <input type="text" class="form-control border border_input" id="inputCity">
+                <input type="text" class="form-control border_input" id="inputCity">
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Send</button>

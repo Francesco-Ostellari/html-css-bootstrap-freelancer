@@ -15,8 +15,6 @@ header div,
 
 header {
   background-color: #2C3E50;
-  position: fixed;
-  width: 100%;
 }
 
 .col-md-6>.title {
@@ -94,6 +92,26 @@ header {
     vertical-align: middle;
 }
 
+.section-portfolio .transition {
+  transition: 1s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.section-portfolio .image:hover .transition {
+  transition: 1s;
+  opacity: 100;
+  background-color: #1ABC9C;
+}
+
+.section-portfolio .fa-plus {
+  line-height: 300px;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
 
 .section-portfolio .fa-star {
   color: #2C3E50;
@@ -200,13 +218,8 @@ h2,
   border: 1px solid #3A546D;
 }
 
-.border {
-  border: 0;
-}
-
 .border_input {
-  border-bottom: 1px solid #ced4da;
-  border-radius: 0;
+  border: 0;
 }
 
 footer .footer-text, .footer-bottom {
@@ -227,6 +240,14 @@ footer .footer-text, .footer-bottom {
 
 .footer-text .link-icona .icona {
   vertical-align: -webkit-baseline-middle;
+}
+
+.footer-text .link-icona:hover {
+  color: #1ABC9C;
+}
+
+.footer-text .link-icona:hover .circle {
+  border-color: #1ABC9C;
 }
 
 .footer-text .link-icona .circle {
@@ -257,7 +278,110 @@ footer .footer-text, .footer-bottom {
     display: none;
   }
 
-  .text-right .fa-bars {
+  .text-end .fa-bars {
     display: inline;
+    padding: 5px;
+    border: 1px solid white;
+  }
+
+  .text-end .fa-bars:hover {
+    display: inline;
+    padding: 5px;
+    border: 1px solid #1ABC9C;
+    color: #1ABC9C;
+  }
+
+
+  .col-md-6 .title {
+    font-size: 0.9em;
+  }
+
+  .text-center h1 {
+    font-size: 1.5em;
+  }
+
+  .text-center .text {
+    font-size: 0.9em;
+  }
+
+  .section-portfolio h2 {
+    font-size: 1.5em;
+  }
+
+  .section-about h2 {
+    font-size: 1.5em;
+  }
+
+  .section-about .text {
+    font-size: 0.9em;
+  }
+
+  .section-contact h2 {
+    font-size: 1.5em;
+  }
+
+  .footer-top .footer-title {
+    font-size: 1.2em;
+  }
+
+  .footer-top .footer-text {
+    font-size: 0.9em;
+  }
+
+  .footer-top .link-icona {
+    font-size: 0.9em;
+  }
+
+  .footer-top .link-icona .circle {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .col-md-6 .title {
+    font-size: 1em;
+  }
+
+  .text-center h1 {
+    font-size: 1.8em;
+  }
+
+  .text-center .text {
+    font-size: 1em;
+  }
+
+  .section-portfolio h2 {
+    font-size: 1.8em;
+  }
+
+  .section-about h2 {
+    font-size: 1.8em;
+  }
+
+  .section-about .text {
+    font-size: 1em;
+  }
+
+  .section-contact h2 {
+    font-size: 1.8em;
+  }
+
+  .footer-top .footer-title {
+    font-size: 1.5em;
+  }
+
+  .footer-top .footer-text {
+    font-size: 1em;
+  }
+
+  .footer-top .link-icona {
+    font-size: 1em;
+  }
+
+  .footer-top .link-icona .circle {
+    width: 37px;
+    height: 37px;
   }
 }
