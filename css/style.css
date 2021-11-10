@@ -15,6 +15,8 @@ header div,
 
 header {
   background-color: #2C3E50;
+  position: fixed;
+  width: 100%;
 }
 
 .col-md-6>.title {
@@ -46,7 +48,7 @@ header {
 
 .jumbotron {
   background-color: #1ABC9C;
-  padding: 30px 0;
+  padding: 80px 0;
 }
 
 .img-avatar .avatar {
@@ -55,29 +57,19 @@ header {
 }
 
 .star {
-  display: inline-block;
   margin-bottom: 10px;
 }
 
-.star .fa-star {
-  vertical-align: bottom;
-}
-
+.jumbotron .star::before,
 .jumbotron .star::after {
-  content: '';
-  width: 110px;
-  border: 1px solid white;
-  display: inline-block;
-  margin: 0 10px;
+    content: '';
+    width: 20%;
+    height: 2px;
+    display: inline-block;
+    background-color: white;
+    vertical-align: middle;
 }
 
-.jumbotron .star::before {
-  content: '';
-  width: 110px;
-  display: inline-block;
-  border: 1px solid white;
-  margin: 0 10px;
-}
 
 .text-center .text {
   font-size: 1.3em;
@@ -92,20 +84,19 @@ header {
   padding: 30px 0;
 }
 
+.section-portfolio .star::before,
 .section-portfolio .star::after {
-  content: '';
-  width: 110px;
-  border: 1px solid #2C3E50;
-  display: inline-block;
-  margin: 0 10px;
+    content: '';
+    width: 8%;
+    height: 2px;
+    display: inline-block;
+    background-color: #2C3E50;
+    vertical-align: middle;
 }
 
-.section-portfolio .star::before {
-  content: '';
-  width: 110px;
-  border: 1px solid #2C3E50;
-  display: inline-block;
-  margin: 0 10px;
+
+.section-portfolio .fa-star {
+  color: #2C3E50;
 }
 
 .margin-bottom {
@@ -119,7 +110,137 @@ header {
 
 .section-about {
   background-color: #1ABC9C;
+  padding: 30px 0;
 }
+
+.section-about 
+h2,
+.fa-star {
+  color: white;
+}
+
+.section-about .star::before,
+.section-about .star::after {
+    content: '';
+    width: 20%;
+    height: 2px;
+    display: inline-block;
+    background-color:white;
+    vertical-align: middle;
+}
+
+.section-about .text {
+  text-transform: none;
+}
+
+.section-about .btn-group {
+  margin-top: 30px;
+}
+
+.section-about .btn-primary {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.section-about .btn-primary:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.section-about .btn-primary:focus {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.section-contact {
+  padding: 30px 0;
+}
+
+.section-contact .star::before,
+.section-contact .star::after {
+    content: '';
+    width: 25%;
+    height: 2px;
+    display: inline-block;
+    background-color:#2C3E50;
+    vertical-align: middle;
+}
+
+.section-contact .fa-star {
+  color: #2C3E50;
+}
+
+.section-contact form {
+  text-transform: none;
+}
+
+.section-contact .btn-primary {
+  background-color: #1ABC9C;
+  color: white;
+  border: 1px solid #1ABC9C;
+}
+
+.section-contact .btn-primary:hover {
+  background-color: #1ABC9C;
+  color: white;
+  border: 1px solid #1ABC9C;
+}
+
+.section-contact .btn-primary:active {
+  background-color: #3A546D;
+  color: white;
+  border: 1px solid #3A546D;
+}
+
+.section-contact .btn-primary:focus {
+  background-color: #3A546D;
+  color: white;
+  border: 1px solid #3A546D;
+}
+
+.form-control {
+  border-top: 1px solid grey ;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+footer .footer-text, .footer-bottom {
+  text-transform: none;
+}
+
+.footer-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-text .link-icona {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  vertical-align: middle;
+}
+
+.icona {
+  vertical-align: -webkit-baseline-middle;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+.footer-text .green {
+  color: #1ABC9C;
+}
+
 
 .footer-top {
   background-color: #3A546D;
