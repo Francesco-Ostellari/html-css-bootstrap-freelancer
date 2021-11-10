@@ -63,11 +63,19 @@ header {
   vertical-align: bottom;
 }
 
-.star::after {
+.jumbotron .star::after {
   content: '';
   width: 110px;
   border: 1px solid white;
   display: inline-block;
+  margin: 0 10px;
+}
+
+.jumbotron .star::before {
+  content: '';
+  width: 110px;
+  display: inline-block;
+  border: 1px solid white;
   margin: 0 10px;
 }
 
@@ -75,41 +83,37 @@ header {
   font-size: 1.3em;
   font-weight: 300;
 }
-.star::before {
+
+.text-center h2 {
+  color: #2C3E50;
+}
+
+.section-portfolio {
+  padding: 30px 0;
+}
+
+.section-portfolio .star::after {
   content: '';
   width: 110px;
+  border: 1px solid #2C3E50;
   display: inline-block;
-  border: 1px solid white;
   margin: 0 10px;
 }
 
-.bg-red {
-  background-color: #BA4B63;
-  border-radius: 10px;
+.section-portfolio .star::before {
+  content: '';
+  width: 110px;
+  border: 1px solid #2C3E50;
+  display: inline-block;
+  margin: 0 10px;
 }
 
-.bg-acqua {
-  background-color: #1EA4B6;
-  border-radius: 10px;
+.margin-bottom {
+  margin-bottom: 10px;
 }
 
-.bg-black {
-  background-color: #140F0F;
-  border-radius: 10px;
-}
-
-.bg-cyan {
-  background-color: #1C83C1;
-  border-radius: 10px;
-}
-
-.bg-blue {
-  background-color: #0E38B5;
-  border-radius: 10px;
-}
-
-.bg-pink {
-  background-color: #CCB2A3;
+.image>img {
+  width: 100%;
   border-radius: 10px;
 }
 
