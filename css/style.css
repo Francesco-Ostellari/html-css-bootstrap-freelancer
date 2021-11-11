@@ -222,6 +222,18 @@ h2,
   border: 0;
 }
 
+.section-contact .label_font_size {
+  font-size: 1.3em;
+}
+
+.border_input:active + .label_font_size {
+  font-size: 0.9em;
+}
+
+.border_input:focus + .label_font_size {
+  font-size: 0.9em;
+}
+
 footer .footer-text, .footer-bottom {
   text-transform: none;
 }
